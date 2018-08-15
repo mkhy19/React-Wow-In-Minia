@@ -176,7 +176,7 @@ export default class MapContainer extends Component {
       
     return (
       <div>
-        <div className="container">
+        <div className="container" role="application" aria-labelledby="app-menu" tabIndex="1">
           <div className="text-input">
             <input role="search" type='text'
                    value={this.state.value}
@@ -184,7 +184,7 @@ export default class MapContainer extends Component {
         
             <ul className="locations-list">{
               markers.filter(m => m.getVisible()).map((m, i) =>
-                (<li key={i}>{m.title}</li>))
+                (<li key={i} tabIndex="0" >{m.title}</li>))
             }</ul>
           </div>
                  
