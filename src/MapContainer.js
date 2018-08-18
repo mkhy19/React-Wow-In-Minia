@@ -22,10 +22,26 @@ export default class MapContainer extends Component {
       
   }
  
+  /*
+    College & University
+    4d4b7105d754a06372d81259
+
+    College Engineering Building
+    4bf58dd8d48988d19e941735
+   
+    College Science Building
+    4bf58dd8d48988d19b941735
+
+    College Technology Building
+    4bf58dd8d48988d19f941735  
+
+    Food
+    4d4b7105d754a06374d81259
+*/
 
   componentDidMount() {
       //Get FourSquare API
-      const url = 'https://api.foursquare.com/v2/venues/search?client_id=4DQBNTFGYWRIJEJ1BQZC5M34TB3DAS21QKWCUWZX5EFNMD03&client_secret=F4W4Y5WM2P1SNOH2410PBRES4BMTL2MOTMLILX05R513YE5D&limit=9&v=20180323&ll=28.087097,30.76184';
+      const url = 'https://api.foursquare.com/v2/venues/search?client_id=4DQBNTFGYWRIJEJ1BQZC5M34TB3DAS21QKWCUWZX5EFNMD03&client_secret=F4W4Y5WM2P1SNOH2410PBRES4BMTL2MOTMLILX05R513YE5D&limit=9&v=20180323&categoryId=4bf58dd8d48988d19b941735,4bf58dd8d48988d19e941735,4bf58dd8d48988d19f941735&ll=28.087097,30.76184';
          
       fetch(url)    
           .then(data => {
