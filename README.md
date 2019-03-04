@@ -12,7 +12,7 @@ This App uses the following APIs:
 ## TL;DR
 To get started developing right away:
 * download or clone this repo: ```
-git clone https://github.com/mohamedkhaledyousef/React-Wow-In-Minia```
+git clone https://github.com/mkhy19/React-Wow-In-Minia```
 
 * ```npm install```
 
